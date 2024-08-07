@@ -2,6 +2,7 @@
 resource "aws_instance" "public_instance" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
+  #iam_instance_profile = aws_iam_instance_profile.dyncec2_instance_profile.name
   subnet_id              = var.public_subnet_id 
   key_name               = var.key  # Change this to your key pair name
   associate_public_ip_address = true

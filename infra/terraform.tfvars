@@ -49,7 +49,7 @@ bastion_sec_groups_name = "bastion-sg"
 # INSTANCE 
 public_instance_tag = "bashian-host"
 vault_instance_count = 2
-vault_instance_tag     = ["vault", "valut"]
+vault_instance_tag     = ["vault", "vault"]
 instance_type       = "t2.small"
 instance_tag_key    = "Name"
 
