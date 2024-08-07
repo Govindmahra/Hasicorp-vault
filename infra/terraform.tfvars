@@ -39,12 +39,10 @@ private_key_name = "vault_key.pem"
 #=================================================================================#
 # SECURITY GROUP
 vault_sg_name        = "vault-sg"
-vault_ingress_ports  = [22, 80, 443]
+vault_ingress_ports  = [22, 80, 443,8200, 8201]
 egress_ports      = [0]
 ingress_protocol  = "tcp"
 egress_protocol   = "-1"
-# web_sg_name       = "webserver-sg"
-# web_ingress_ports = [22, 80]
 bastion_ingress_ports = [ 22 ]
 bastion_sec_groups_name = "bastion-sg"
 #=================================================================================#
@@ -56,7 +54,6 @@ instance_type       = "t2.small"
 instance_tag_key    = "Name"
 
 instance_tag_value  = ["vault*"]
-# web_instance_group_name = "Webserver"
 vault_instance_group_name = "Hashicorp"
 #=================================================================================#
 # TARGET GROUP
@@ -67,5 +64,5 @@ vault_tg_protocol = "HTTP"
 # LOAD BALANCER
 vault_lb_name = "vault-lb"
 vault_lb_type = "application"
-vault_lb_port = 80
+vault_lb_port = 8200
 
