@@ -51,12 +51,10 @@ bastion_sec_groups_name = "bastion-sg"
 # INSTANCE 
 public_instance_tag = "bashian-host"
 vault_instance_count = 2
-vault_instance_tag     = ["vault-1", "valut-2"]
-# web_instance_count  = 2
-# web_instance_tag    = ["web-1", "web-2","web-3","web-4"]
+vault_instance_tag     = ["vault", "valut"]
 instance_type       = "t2.small"
 instance_tag_key    = "Name"
-#instance_tag_value  = ["haproxy*"]
+
 instance_tag_value  = ["vault*"]
 # web_instance_group_name = "Webserver"
 vault_instance_group_name = "Hashicorp"
