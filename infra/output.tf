@@ -17,5 +17,11 @@ output "eip_id" {
 output "nat_id" {
   value = module.nat.nat_out
 }
+output "public_instance_ip_out" {
+  value = module.instance_launch.public_instance_ip_out
+}
 
+output "vault_instance_ip_out" {
+  value = module.instance_launch.vault_instance_ip_out
+}
 
