@@ -34,7 +34,7 @@ private_route_tag = "vault-private-route"
 #=================================================================================#
 # KEY PAIR 
 public_key_pair  = "vault_key"
-private_key_name = "vault_key.pem"
+private_key_name = "/var/lib/jenkins/infra/vault_key.pem"
 # default_public_key = "~/.ssh/id_rsa.pub" # Replace with the path to your public key
 #=================================================================================#
 # SECURITY GROUP
