@@ -20,6 +20,6 @@ resource "null_resource" "change_permissions" {
   }
 
   provisioner "local-exec" {
-    command = "chmod 400 ./${var.private_key_name}"
+    command = "chmod 400 ${var.private_key_name}"
   }
 }
