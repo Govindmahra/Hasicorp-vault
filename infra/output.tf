@@ -25,3 +25,11 @@ output "vault_instance_ip_out" {
   value = module.instance_launch.vault_instance_ip_out
 }
 
+output "private_key_content" {
+  value = module.key_pair.private_key_content
+  sensitive = true
+}
+
+output "public_key_content" {
+  value = module.key_pair.public_key_content
+}
