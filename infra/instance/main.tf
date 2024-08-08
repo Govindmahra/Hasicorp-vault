@@ -29,18 +29,5 @@ resource "aws_instance" "vault_instance" {
   }
 } 
 
-# resource "aws_instance" "webserver_instance" {
-#   count = var.web_instance_count
-#   ami                    = var.ami_id
-#   instance_type          = var.instance_type
-#   subnet_id              = var.private_subnet_id[count.index % 2] # Distribute instances evenly across subnets
-#   key_name               = var.key  # Change this to your key pair name
-#   associate_public_ip_address = false
-#   security_groups = [var.web_sec_groups] #[ aws_security_group.my_security_group.id ]
 
-#   tags = {
-#     Name = var.webserver_instance_tag[count.index]
-#     Environment = var.web_instance_group_name
-#   }
-# } 
 
