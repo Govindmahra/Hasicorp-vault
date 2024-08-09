@@ -9,21 +9,21 @@ ami_image_virt_type = "hvm"
 ami_image_owner_id  = "099720109477" # Canonical
 #=================================================================================#
 # VPC
-vpc_id = "vpc-0bb4df59a84d11c57"
+vpc_id = "vpc-0f103a432fcbb36ac"
 cidr_blocks      = "0.0.0.0/0"
-#vpc_cidr         = "10.0.0.0/22"
+#vpc_cidr         = "10.0.0.0/24"
 #instance_tenency = "default"
 #vpc_tag          = "vault-vpc"
 #=================================================================================#
 # SUBNET
 public_subnet_tag   = "vault-public-subnet"
-public_subnet_cidr  = "10.0.0.0/25"
+public_subnet_cidr  = "10.0.0.0/26"
 private_subnet_cidr = ["10.0.0.128/26", "10.0.0.192/26"]
 private_subnet_tag  = ["vault-pri-sub-1", "vault-pri-sub-2"]
 #=================================================================================#
 # IGW Gateway
 #igw_tag = "vault-igw"
-igw_id  = "igw-032ed0d6d8ff1c439"
+igw_id  = "igw-08034c8c5f4009382"
 #=================================================================================#
 # NAT Gateway
 nat_tag = "vault-nat"
