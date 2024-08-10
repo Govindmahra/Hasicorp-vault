@@ -1,9 +1,9 @@
 /*terraform {
   backend "s3" {
-    bucket = "terraform-bucket-kiran"
+    bucket = "terraform-bucket-govind"
     key    = "terraform.tfstate"
     region = "ap-northeast-1"
-    dynamodb_table = "terraform-dynamo-kiran"
+    dynamodb_table = "terraform"
   }
 }
 */
