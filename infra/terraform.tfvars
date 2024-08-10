@@ -43,7 +43,7 @@ vault_ingress_ports  = [22, 80, 443,8200, 8201]
 egress_ports      = [0]
 ingress_protocol  = "HTTP"
 egress_protocol   = "-1"
-bastion_ingress_ports = [ 22, 8200, 8201 ]
+bastion_ingress_ports = [ 22 ]
 bastion_sec_groups_name = "bastion-sg"
 #=================================================================================#
 # INSTANCE 
