@@ -58,11 +58,11 @@ vault_instance_group_name = "Hashicorp"
 #=================================================================================#
 # TARGET GROUP
 vault_tg_name     = "vault-tg"
-vault_tg_port     = 80
+vault_tg_port     = 8200
 vault_tg_protocol = "HTTP"
 #=================================================================================#
 # LOAD BALANCER
 vault_lb_name = "vault-lb"
 vault_lb_type = "application"
-vault_lb_port = 8200
+vault_lb_port = 80
 
