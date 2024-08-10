@@ -41,9 +41,9 @@ private_key_name = "/var/lib/jenkins/infra/vault_key.pem"
 vault_sg_name        = "vault-sg"
 vault_ingress_ports  = [22, 80, 443,8200, 8201]
 egress_ports      = [0]
-ingress_protocol  = "HTTP"
+ingress_protocol  = "tcp"
 egress_protocol   = "-1"
-bastion_ingress_ports = [ 22 ]
+bastion_ingress_ports = [ 22, 8200, 8201 ]
 bastion_sec_groups_name = "bastion-sg"
 #=================================================================================#
 # INSTANCE 
